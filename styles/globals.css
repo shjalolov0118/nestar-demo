@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  color: #172033;
+  background: #f8fafc;
+}
+a {
+  color: inherit;
+}
+code {
+  padding: 0.2rem 0.4rem;
+  background: #e2e8f0;
+  border-radius: 4px;
+}
