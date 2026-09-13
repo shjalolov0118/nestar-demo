@@ -1,24 +1,19 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import { Box, Container, Stack } from "@mui/material";
+import { brown, green } from "@mui/material/colors";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Nestar Demo — Pages Router</title>
-        <meta
-          name="description"
-          content="Next.js 14.2.1 course demo using the Pages Router"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <main className={styles.main}>
-        <h1>Nestar Demo</h1>
-        <p>Next.js 14.2.1 · Pages Router · TypeScript</p>
-        <p>
-          Get started by editing <code>pages/index.tsx</code>.
-        </p>
-      </main>
+      <Stack sx={{ background: "#81c784" }}>Header</Stack>
+      <Container>
+        <Stack flexDirection={"column"}>
+          <Box>Popular Properties</Box>
+          <Box>Top Agents</Box>
+          <Box>Top Properties</Box>
+          <Box>Events</Box>
+        </Stack>
+      </Container>
+      <Stack sx={{ background: "#a1887f" }}>Footer</Stack>
     </>
   );
 }
